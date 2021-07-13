@@ -1,0 +1,4 @@
+sml_status.c:13:13:sml_status_init	16	static
+sml_status.c:26:13:sml_status_parse	32	static
+sml_status.c:84:5:sml_status_write	24	static
+sml_status.c:105:6:sml_status_free	16	static

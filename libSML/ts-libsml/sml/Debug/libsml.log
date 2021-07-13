@@ -1,0 +1,80 @@
+﻿Der Buildvorgang wurde am 04.01.2016 08:00:49 gestartet.
+     1>Projekt "D:\Development\HDLC_Bridge_VS\TS-libSml\sml\libsml.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _NO_UUID_LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\sml_attention_response.cpp src\sml_boolean.cpp src\sml_close_request.cpp src\sml_close_response.cpp src\sml_crc16.cpp src\sml_file.cpp src\sml_get_list_request.cpp src\sml_get_list_response.cpp src\sml_get_proc_parameter_request.cpp src\sml_get_proc_parameter_response.cpp src\sml_get_profile_list_request.cpp src\sml_get_profile_list_response.cpp src\sml_get_profile_pack_request.cpp src\sml_get_profile_pack_response.cpp src\sml_list.cpp src\sml_log.cpp src\sml_message.cpp src\sml_number.cpp src\sml_octet_string.cpp src\sml_open_request.cpp src\sml_open_response.cpp src\sml_set_proc_parameter_request.cpp src\sml_shared.cpp src\sml_signature.cpp src\sml_status.cpp src\sml_time.cpp src\sml_transport.cpp src\sml_transport_file.cpp src\sml_tree.cpp src\sml_v105.cpp src\sml_value.cpp
+         sml_value.cpp
+         sml_v105.cpp
+         sml_tree.cpp
+         sml_transport_file.cpp
+         sml_transport.cpp
+     1>d:\development\hdlc_bridge_vs\ts-libsml\sml\src\sml_transport.cpp(53): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(337): Siehe Deklaration von 'read'
+     1>d:\development\hdlc_bridge_vs\ts-libsml\sml\src\sml_transport.cpp(178): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _write. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(342): Siehe Deklaration von 'write'
+         sml_time.cpp
+         sml_status.cpp
+         sml_signature.cpp
+         sml_shared.cpp
+         sml_set_proc_parameter_request.cpp
+         sml_open_response.cpp
+         sml_open_request.cpp
+         sml_octet_string.cpp
+         sml_number.cpp
+         sml_message.cpp
+         sml_log.cpp
+         sml_list.cpp
+         sml_get_profile_pack_response.cpp
+         sml_get_profile_pack_request.cpp
+         sml_get_profile_list_response.cpp
+         Code wird generiert...
+         Kompilieren...
+         sml_get_profile_list_request.cpp
+         sml_get_proc_parameter_response.cpp
+         sml_get_proc_parameter_request.cpp
+         sml_get_list_response.cpp
+         sml_get_list_request.cpp
+         sml_file.cpp
+         sml_crc16.cpp
+         sml_close_response.cpp
+         sml_close_request.cpp
+         sml_boolean.cpp
+         sml_attention_response.cpp
+         Code wird generiert...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\Development\HDLC_Bridge_VS\TS-libSml\Debug\libsml.lib" /NOLOGO Debug\sml_attention_response.obj
+         Debug\sml_boolean.obj
+         Debug\sml_close_request.obj
+         Debug\sml_close_response.obj
+         Debug\sml_crc16.obj
+         Debug\sml_file.obj
+         Debug\sml_get_list_request.obj
+         Debug\sml_get_list_response.obj
+         Debug\sml_get_proc_parameter_request.obj
+         Debug\sml_get_proc_parameter_response.obj
+         Debug\sml_get_profile_list_request.obj
+         Debug\sml_get_profile_list_response.obj
+         Debug\sml_get_profile_pack_request.obj
+         Debug\sml_get_profile_pack_response.obj
+         Debug\sml_list.obj
+         Debug\sml_log.obj
+         Debug\sml_message.obj
+         Debug\sml_number.obj
+         Debug\sml_octet_string.obj
+         Debug\sml_open_request.obj
+         Debug\sml_open_response.obj
+         Debug\sml_set_proc_parameter_request.obj
+         Debug\sml_shared.obj
+         Debug\sml_signature.obj
+         Debug\sml_status.obj
+         Debug\sml_time.obj
+         Debug\sml_transport.obj
+         Debug\sml_transport_file.obj
+         Debug\sml_tree.obj
+         Debug\sml_v105.obj
+         Debug\sml_value.obj
+         libsml.vcxproj -> D:\Development\HDLC_Bridge_VS\TS-libSml\Debug\libsml.lib
+     1>Die Erstellung des Projekts "D:\Development\HDLC_Bridge_VS\TS-libSml\sml\libsml.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:02.74

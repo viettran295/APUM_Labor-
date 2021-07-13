@@ -1,0 +1,69 @@
+// Copyright 2015 - 2019
+// Uwe Heuert
+// exceeding solutions GmbH
+//
+// This file is part of libSML.
+
+#ifndef _SML_NUMBER_H_
+#define	_SML_NUMBER_H_
+
+#include "sml_shared.h"
+
+//SML_Unit ::= Unsigned8
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#define SML_BIG_ENDIAN 1
+#define SML_LITTLE_ENDIAN 0
+
+int sml_number_endian(void);
+void sml_number_byte_swap(unsigned char *bytes, int bytes_len);
+
+void *sml_number_init(u64 number, unsigned char type, int size);
+// Parses a number. Identified by type (SML_TYPE_INTEGER or SML_TYPE_UNSIGNED)
+// and maximal number of bytes (SML_TYPE_NUMBER_8, SML_TYPE_NUMBER_16,
+// SML_TYPE_NUMBER_32, SML_TYPE_NUMBER_64)
+void *sml_number_parse(sml_buffer *buf, unsigned char type, int max_size);
+int sml_number_write(void *np, unsigned char type, int size, sml_buffer *buf);
+void sml_number_free(void *np);
+
+#define sml_u8_init(n) (u8 *) sml_number_init(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_8)
+#define sml_u16_init(n) (u16 *) sml_number_init(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_16)
+#define sml_u32_init(n) (u32 *) sml_number_init(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_32)
+#define sml_u64_init(n) (u64 *) sml_number_init(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_64)
+#define sml_i8_init(n) (i8 *) sml_number_init(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_8)
+#define sml_i16_init(n) (i16 *) sml_number_init(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_16)
+#define sml_i32_init(n) (i32 *) sml_number_init(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_32)
+#define sml_i64_init(n) (i64 *) sml_number_init(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_64)
+
+#define sml_u8_parse(buf) (u8 *) sml_number_parse(buf, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_8)
+#define sml_u16_parse(buf) (u16 *) sml_number_parse(buf, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_16)
+#define sml_u32_parse(buf) (u32 *) sml_number_parse(buf, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_32)
+#define sml_u64_parse(buf) (u64 *) sml_number_parse(buf, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_64)
+#define sml_i8_parse(buf) (i8 *) sml_number_parse(buf, SML_TYPE_INTEGER, SML_TYPE_NUMBER_8)
+#define sml_i16_parse(buf) (i16 *) sml_number_parse(buf, SML_TYPE_INTEGER, SML_TYPE_NUMBER_16)
+#define sml_i32_parse(buf) (i32 *) sml_number_parse(buf, SML_TYPE_INTEGER, SML_TYPE_NUMBER_32)
+#define sml_i64_parse(buf) (i64 *) sml_number_parse(buf, SML_TYPE_INTEGER, SML_TYPE_NUMBER_64)
+
+#define sml_u8_write(n, buf) sml_number_write(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_8, buf)
+#define sml_u16_write(n, buf) sml_number_write(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_16, buf)
+#define sml_u32_write(n, buf) sml_number_write(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_32, buf)
+#define sml_u64_write(n, buf) sml_number_write(n, SML_TYPE_UNSIGNED, SML_TYPE_NUMBER_64, buf)
+#define sml_i8_write(n, buf) sml_number_write(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_8, buf)
+#define sml_i16_write(n, buf) sml_number_write(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_16, buf)
+#define sml_i32_write(n, buf) sml_number_write(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_32, buf)
+#define sml_i64_write(n, buf) sml_number_write(n, SML_TYPE_INTEGER, SML_TYPE_NUMBER_64, buf)
+
+typedef u8 sml_unit;
+#define sml_unit_init(n) sml_u8_init(n)
+#define sml_unit_parse(buf) sml_u8_parse(buf)
+#define sml_unit_write(n, buf) sml_u8_write(n, buf)
+#define sml_unit_free(np) sml_number_free(np)
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* _SML_NUMBER_H_ */

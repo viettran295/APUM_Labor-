@@ -1,0 +1,4 @@
+sml_boolean.c:13:14:sml_boolean_init	24	static
+sml_boolean.c:27:14:sml_boolean_parse	24	static
+sml_boolean.c:80:5:sml_boolean_write	24	static
+sml_boolean.c:111:6:sml_boolean_free	16	static

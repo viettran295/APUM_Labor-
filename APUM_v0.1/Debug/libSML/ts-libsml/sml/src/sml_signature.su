@@ -1,0 +1,6 @@
+sml_signature.c:11:15:sml_list_build_signed_content_edl	112	static
+sml_signature.c:111:15:sml_list_build_signed_content_bz_slp	152	static
+sml_signature.c:207:15:sml_list_build_signed_content_bz_rlm	152	static
+sml_signature.c:368:15:sml_list_entry_build_signed_content	32	static
+sml_signature.c:394:15:sml_tree_build_signed_content_bz_slp	232	static
+sml_signature.c:803:15:sml_tree_build_signed_content	32	static

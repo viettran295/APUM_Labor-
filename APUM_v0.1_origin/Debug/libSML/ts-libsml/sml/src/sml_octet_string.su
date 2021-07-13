@@ -1,0 +1,11 @@
+sml_octet_string.c:30:15:sml_octet_string_init	24	static
+sml_octet_string.c:56:15:sml_octet_string_parse	24	static
+sml_octet_string.c:95:5:sml_octet_string_write	24	static
+sml_octet_string.c:125:6:sml_octet_string_free	16	static
+sml_octet_string.c:137:15:sml_octet_string_init_from_hex	40	static
+sml_octet_string.c:167:15:sml_octet_string_generate_uuid	32	static
+sml_octet_string.c:200:5:sml_octet_string_cmp	16	static
+sml_octet_string.c:209:5:sml_octet_string_cmp_with_hex	24	static
+sml_octet_string.c:223:9:ctoi	24	static
+sml_octet_string.c:242:9:c2toi	24	static
+sml_octet_string.c:247:9:c2ptoi	24	static

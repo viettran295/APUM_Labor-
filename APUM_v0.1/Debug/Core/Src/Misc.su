@@ -1,0 +1,4 @@
+Misc.c:10:10:Misc_SwapByteOrder16	24	static
+Misc.c:19:10:Misc_SwapByteOrder32	32	static
+Misc.c:35:10:Misc_SwapByteOrder64	40	static
+Misc.c:82:6:Misc_ByteArrayCompare	24	static

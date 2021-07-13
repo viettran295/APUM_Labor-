@@ -1,0 +1,4 @@
+sml_get_list_request.c:13:23:sml_get_list_request_init	16	static
+sml_get_list_request.c:26:23:sml_get_list_request_parse	24	static
+sml_get_list_request.c:81:5:sml_get_list_request_write	24	static
+sml_get_list_request.c:111:6:sml_get_list_request_free	16	static

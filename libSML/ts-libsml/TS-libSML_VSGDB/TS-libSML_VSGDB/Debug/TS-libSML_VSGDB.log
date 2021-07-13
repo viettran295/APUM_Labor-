@@ -1,0 +1,240 @@
+﻿Der Buildvorgang wurde am 04.01.2016 09:06:05 gestartet.
+     1>Projekt "D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\TS-libSML_VSGDB.vcxproj" auf Knoten "2", Rebuild Ziel(e).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\TS-libSML_VSGDB.vcxproj" "/solution:D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Run "make CONFIG=Debug clean" in directory "/tmp/VisualGDB/d/Development/HDLC_Bridge_VS/TS-libSml/TS-libSML_VSGDB/TS-libSML_VSGDB" on root@192.168.0.120 (SSH)
+         rm -rf Debug
+         VisualGDB: Sending 67 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Debug" in directory "/tmp/VisualGDB/d/Development/HDLC_Bridge_VS/TS-libSml/TS-libSML_VSGDB/TS-libSML_VSGDB" on root@192.168.0.120 (SSH)
+         mkdir Debug
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_attention_response.cpp -o Debug/sml_attention_response.o -MD -MF Debug/sml_attention_response.dep
+         src/sml_attention_response.cpp: In function 'sml_attention_response* sml_attention_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_attention_response.cpp(38,68): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_attention_response.cpp(54,37): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_boolean.cpp -o Debug/sml_boolean.o -MD -MF Debug/sml_boolean.dep
+         src/sml_boolean.cpp: In function 'sml_boolean* sml_boolean_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_boolean.cpp(63,33): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_boolean.cpp(68,48): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_close_request.cpp -o Debug/sml_close_request.o -MD -MF Debug/sml_close_request.dep
+         src/sml_close_request.cpp: In function 'sml_close_request* sml_close_request_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_close_request.cpp(37,63): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_close_request.cpp(53,32): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_close_response.cpp -o Debug/sml_close_response.o -MD -MF Debug/sml_close_response.dep
+         src/sml_close_response.cpp: In function 'sml_close_response* sml_close_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_close_response.cpp(37,64): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_close_response.cpp(53,33): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_crc16.cpp -o Debug/sml_crc16.o -MD -MF Debug/sml_crc16.dep
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_file.cpp -o Debug/sml_file.o -MD -MF Debug/sml_file.dep
+         src/sml_file.cpp: In function 'sml_file* sml_file_parse(unsigned char*, size_t, int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_file.cpp(35,54): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_file.cpp(62,53): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_file.cpp: In function 'sml_file* sml_file_init(int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_file.cpp(77,54): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_file.cpp: In function 'void sml_file_add_message(sml_file*, sml_message*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_file.cpp(93,80): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_file.cpp: In function 'void sml_file_print(sml_file*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_file.cpp(132,87): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_file.cpp(134,70): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_list_request.cpp -o Debug/sml_get_list_request.o -MD -MF Debug/sml_get_list_request.dep
+         src/sml_get_list_request.cpp: In function 'sml_get_list_request* sml_get_list_request_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_list_request.cpp(37,66): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_list_request.cpp(53,35): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_list_response.cpp -o Debug/sml_get_list_response.o -MD -MF Debug/sml_get_list_response.dep
+         src/sml_get_list_response.cpp: In function 'sml_get_list_response* sml_get_list_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_list_response.cpp(37,67): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_list_response.cpp(53,36): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_proc_parameter_request.cpp -o Debug/sml_get_proc_parameter_request.o -MD -MF Debug/sml_get_proc_parameter_request.dep
+         src/sml_get_proc_parameter_request.cpp: In function 'sml_get_proc_parameter_request* sml_get_proc_parameter_request_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_proc_parameter_request.cpp(38,76): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_proc_parameter_request.cpp(54,45): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_proc_parameter_response.cpp -o Debug/sml_get_proc_parameter_response.o -MD -MF Debug/sml_get_proc_parameter_response.dep
+         src/sml_get_proc_parameter_response.cpp: In function 'sml_get_proc_parameter_response* sml_get_proc_parameter_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_proc_parameter_response.cpp(37,77): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_proc_parameter_response.cpp(53,46): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_profile_list_request.cpp -o Debug/sml_get_profile_list_request.o -MD -MF Debug/sml_get_profile_list_request.dep
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_profile_list_response.cpp -o Debug/sml_get_profile_list_response.o -MD -MF Debug/sml_get_profile_list_response.dep
+         src/sml_get_profile_list_response.cpp: In function 'sml_get_profile_list_response* sml_get_profile_list_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_list_response.cpp(37,75): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_list_response.cpp(53,44): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_profile_pack_request.cpp -o Debug/sml_get_profile_pack_request.o -MD -MF Debug/sml_get_profile_pack_request.dep
+         src/sml_get_profile_pack_request.cpp: In function 'sml_get_profile_pack_request* sml_get_profile_pack_request_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_request.cpp(40,74): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_request.cpp(56,43): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_request.cpp(90,70): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_get_profile_pack_response.cpp -o Debug/sml_get_profile_pack_response.o -MD -MF Debug/sml_get_profile_pack_response.dep
+         src/sml_get_profile_pack_response.cpp: In function 'sml_get_profile_pack_response* sml_get_profile_pack_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(37,75): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(53,44): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_get_profile_pack_response.cpp: In function 'sml_prof_obj_header_entry* sml_prof_obj_header_entry_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(129,71): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(145,40): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_get_profile_pack_response.cpp: In function 'sml_prof_obj_period_entry* sml_prof_obj_period_entry_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(193,71): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(209,40): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_get_profile_pack_response.cpp: In function 'sml_value_entry* sml_value_entry_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(261,61): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_get_profile_pack_response.cpp(277,30): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_list.cpp -o Debug/sml_list.o -MD -MF Debug/sml_list.dep
+         src/sml_list.cpp: In function 'sml_sequence* sml_sequence_parse(sml_buffer*, void* (*)(sml_buffer*), void (*)(void*))':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_list.cpp(48,27): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_list.cpp(53,58): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_list.cpp: In function 'int sml_sequence_add(sml_sequence*, void*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_list.cpp(111,69): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_list.cpp: In function 'sml_list* sml_list_entry_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_list.cpp(147,29): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_list.cpp(152,54): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_list.cpp: In function 'sml_list* sml_list_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_list.cpp(197,23): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_log.cpp -o Debug/sml_log.o -MD -MF Debug/sml_log.dep
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_message.cpp -o Debug/sml_message.o -MD -MF Debug/sml_message.dep
+         src/sml_message.cpp: In function 'sml_message* sml_message_init()':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(42,57): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_message.cpp: In function 'sml_message* sml_message_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(56,57): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(74,26): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_message.cpp: In function 'void sml_message_write(sml_message*, sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(126,49): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_message.cpp: In function 'sml_message_body* sml_message_body_init(u32, void*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(171,62): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_message.cpp: In function 'sml_message_body* sml_message_body_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(185,62): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(206,53): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(255,77): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_message.cpp: In function 'void sml_message_body_write(sml_message_body*, sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(323,81): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_message.cpp: In function 'void sml_message_body_free(sml_message_body*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_message.cpp(376,81): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_number.cpp -o Debug/sml_number.o -MD -MF Debug/sml_number.dep
+         src/sml_number.cpp: In function 'void* sml_number_init(u64, unsigned char, int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_number.cpp(39,41): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_number.cpp: In function 'void* sml_number_parse(sml_buffer*, unsigned char, int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_number.cpp(71,45): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_number.cpp(99,41): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_number.cpp: In function 'void sml_number_byte_swap(unsigned char*, int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_number.cpp(156,46): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_octet_string.cpp -o Debug/sml_octet_string.o -MD -MF Debug/sml_octet_string.dep
+         src/sml_octet_string.cpp: In function 'octet_string* sml_octet_string_init(unsigned char*, int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_octet_string.cpp(46,58): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_octet_string.cpp(54,44): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_octet_string.cpp: In function 'octet_string* sml_octet_string_init_from_hex(char*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_octet_string.cpp(73,44): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_octet_string.cpp: In function 'octet_string* sml_octet_string_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_octet_string.cpp(117,59): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_open_request.cpp -o Debug/sml_open_request.o -MD -MF Debug/sml_open_request.dep
+         src/sml_open_request.cpp: In function 'sml_open_request* sml_open_request_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_open_request.cpp(38,62): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_open_request.cpp(54,31): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_open_response.cpp -o Debug/sml_open_response.o -MD -MF Debug/sml_open_response.dep
+         src/sml_open_response.cpp: In function 'sml_open_response* sml_open_response_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_open_response.cpp(38,63): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_open_response.cpp(54,32): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_set_proc_parameter_request.cpp -o Debug/sml_set_proc_parameter_request.o -MD -MF Debug/sml_set_proc_parameter_request.dep
+         src/sml_set_proc_parameter_request.cpp: In function 'sml_set_proc_parameter_request* sml_set_proc_parameter_request_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_set_proc_parameter_request.cpp(37,76): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_set_proc_parameter_request.cpp(53,46): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_shared.cpp -o Debug/sml_shared.o -MD -MF Debug/sml_shared.dep
+         src/sml_shared.cpp: In function 'int sml_buf_get_next_length(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(49,28): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(68,32): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_shared.cpp: In function 'sml_buffer* sml_buffer_init(size_t, int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(148,56): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(155,44): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_shared.cpp: In function 'void hexdump(unsigned char*, size_t)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(200,43): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(202,14): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(205,12): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_shared.cpp: In function 'char* sml_get_errorstring(int)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(246,4): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_shared.cpp(256,9): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_signature.cpp -o Debug/sml_signature.o -MD -MF Debug/sml_signature.dep
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_status.cpp -o Debug/sml_status.o -MD -MF Debug/sml_status.dep
+         src/sml_status.cpp: In function 'sml_status* sml_status_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_status.cpp(44,35): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_status.cpp(49,56): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_time.cpp -o Debug/sml_time.o -MD -MF Debug/sml_time.dep
+         src/sml_time.cpp: In function 'sml_timestamp_local* sml_timestamp_local_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_time.cpp(43,65): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_time.cpp(59,34): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_time.cpp: In function 'sml_time* sml_time_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_time.cpp(115,54): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_time.cpp(140,23): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_transport.cpp -o Debug/sml_transport.o -MD -MF Debug/sml_transport.dep
+         src/sml_transport.cpp: In function 'size_t sml_transport_read(int, unsigned char*, size_t)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_transport.cpp(119,43): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_transport_file.cpp -o Debug/sml_transport_file.o -MD -MF Debug/sml_transport_file.dep
+         src/sml_transport_file.cpp: In function 'size_t sml_transport_read_file(FILE*, unsigned char*, size_t)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_transport_file.cpp(46,45): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_transport_file.cpp(98,43): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_transport_file.cpp: In function 'size_t sml_transport_read_mem(unsigned char*, unsigned char*, size_t)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_transport_file.cpp(117,45): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_transport_file.cpp(169,43): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_tree.cpp -o Debug/sml_tree.o -MD -MF Debug/sml_tree.dep
+         src/sml_tree.cpp: In function 'sml_tree_path* sml_tree_path_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(43,59): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(57,39): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'int sml_tree_path_add_path_entry(sml_tree_path*, octet_string*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(84,90): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'sml_tree* sml_tree_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(142,54): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(158,23): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(177,46): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'int sml_tree_add_tree(sml_tree*, sml_tree*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(229,84): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'sml_proc_par_value* sml_proc_par_value_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(269,64): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(289,50): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'void sml_proc_par_value_write(sml_proc_par_value*, sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(348,53): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'sml_tupel_entry* sml_tupel_entry_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(408,61): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(424,30): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_tree.cpp: In function 'sml_period_entry* sml_period_entry_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(697,62): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_tree.cpp(713,31): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_v105.cpp -o Debug/sml_v105.o -MD -MF Debug/sml_v105.dep
+         src/sml_v105.cpp: In function 'sml_simple_value* sml_simple_value_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(29,62): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(37,41): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_v105.cpp: In function 'sml_timestamped_value* sml_timestamped_value_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(124,67): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(140,36): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_v105.cpp: In function 'sml_cosem_scaler_unit* sml_cosem_scaler_unit_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(193,67): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(209,36): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_v105.cpp: In function 'sml_cosem_value* sml_cosem_value_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(257,61): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(277,55): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_v105.cpp: In function 'sml_list_type* sml_list_type_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(343,59): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_v105.cpp(363,51): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -ggdb -ffunction-sections -O0 -fpermissive  -I/usr/local/include/ -DDEBUG  -fPIC -c src/sml_value.cpp -o Debug/sml_value.o -MD -MF Debug/sml_value.dep
+         src/sml_value.cpp: In function 'sml_value* sml_value_parse(sml_buffer*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_value.cpp(45,55): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_value.cpp(53,34): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         src/sml_value.cpp: In function 'double sml_value_to_double(sml_value*)':
+     1>D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\src\sml_value.cpp(144,53): warning : deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+         gcc -shared -o Debug/libSML.so -Wl,-gc-sections    -Wl,--start-group Debug/sml_attention_response.o Debug/sml_boolean.o Debug/sml_close_request.o Debug/sml_close_response.o Debug/sml_crc16.o Debug/sml_file.o Debug/sml_get_list_request.o Debug/sml_get_list_response.o Debug/sml_get_proc_parameter_request.o Debug/sml_get_proc_parameter_response.o Debug/sml_get_profile_list_request.o Debug/sml_get_profile_list_response.o Debug/sml_get_profile_pack_request.o Debug/sml_get_profile_pack_response.o Debug/sml_list.o Debug/sml_log.o Debug/sml_message.o Debug/sml_number.o Debug/sml_octet_string.o Debug/sml_open_request.o Debug/sml_open_response.o Debug/sml_set_proc_parameter_request.o Debug/sml_shared.o Debug/sml_signature.o Debug/sml_status.o Debug/sml_time.o Debug/sml_transport.o Debug/sml_transport_file.o Debug/sml_tree.o Debug/sml_v105.o Debug/sml_value.o   -Wl,--rpath='$ORIGIN'  -Wl,-soname,libSML.so  -Wl,--end-group
+         VisualGDB: Executing postbuild actions
+         VisualGDB: Run "/bin/cp -n libSML.so /usr/local/lib/" in directory "/tmp/VisualGDB/d/Development/HDLC_Bridge_VS/TS-libSml/TS-libSML_VSGDB/TS-libSML_VSGDB/Debug" on root@192.168.0.120 (SSH)
+     1>Die Erstellung des Projekts "D:\Development\HDLC_Bridge_VS\TS-libSml\TS-libSML_VSGDB\TS-libSML_VSGDB\TS-libSML_VSGDB.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:14.29

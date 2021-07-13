@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AC8BFF06-10D6-45BA-8C64-871B0E836E84}</ProjectGuid>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\c++\4.6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\c++\4.6\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\c++\4.6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)TS-libSML_VSGDB-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath>D:\Development\HDLC_Bridge_VS\TS-libSml\sml\include;$(IncludePath)</IncludePath>
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\c++\4.6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\c++\4.6\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\c++\4.6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.120\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)TS-libSML_VSGDB-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\sml_attention_response.cpp" />
+    <ClCompile Include="src\sml_boolean.cpp" />
+    <ClCompile Include="src\sml_close_request.cpp" />
+    <ClCompile Include="src\sml_close_response.cpp" />
+    <ClCompile Include="src\sml_crc16.cpp" />
+    <ClCompile Include="src\sml_file.cpp" />
+    <ClCompile Include="src\sml_get_list_request.cpp" />
+    <ClCompile Include="src\sml_get_list_response.cpp" />
+    <ClCompile Include="src\sml_get_proc_parameter_request.cpp" />
+    <ClCompile Include="src\sml_get_proc_parameter_response.cpp" />
+    <ClCompile Include="src\sml_get_profile_list_request.cpp" />
+    <ClCompile Include="src\sml_get_profile_list_response.cpp" />
+    <ClCompile Include="src\sml_get_profile_pack_request.cpp" />
+    <ClCompile Include="src\sml_get_profile_pack_response.cpp" />
+    <ClCompile Include="src\sml_list.cpp" />
+    <ClCompile Include="src\sml_log.cpp" />
+    <ClCompile Include="src\sml_message.cpp" />
+    <ClCompile Include="src\sml_number.cpp" />
+    <ClCompile Include="src\sml_octet_string.cpp" />
+    <ClCompile Include="src\sml_open_request.cpp" />
+    <ClCompile Include="src\sml_open_response.cpp" />
+    <ClCompile Include="src\sml_set_proc_parameter_request.cpp" />
+    <ClCompile Include="src\sml_shared.cpp" />
+    <ClCompile Include="src\sml_signature.cpp" />
+    <ClCompile Include="src\sml_status.cpp" />
+    <ClCompile Include="src\sml_time.cpp" />
+    <ClCompile Include="src\sml_transport.cpp" />
+    <ClCompile Include="src\sml_transport_file.cpp" />
+    <ClCompile Include="src\sml_tree.cpp" />
+    <ClCompile Include="src\sml_v105.cpp" />
+    <ClCompile Include="src\sml_value.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

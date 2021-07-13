@@ -1,0 +1,21 @@
+# Debian Packaging
+/.pc/
+
+# Binaries
+/test/test
+/examples/sml_server
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so.*
+*.so
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+

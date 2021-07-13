@@ -1,0 +1,13 @@
+sml_list.c:19:15:sml_sequence_init	24	static
+sml_list.c:33:15:sml_sequence_parse	48	static
+sml_list.c:83:5:sml_sequence_write	32	static
+sml_list.c:111:6:sml_sequence_free	24	static
+sml_list.c:130:5:sml_sequence_add	24	static
+sml_list.c:155:11:sml_list_init	16	static
+sml_list.c:168:6:sml_list_add	16	static
+sml_list.c:173:11:sml_list_entry_parse	24	static
+sml_list.c:235:11:sml_list_parse	32	static
+sml_list.c:288:5:sml_list_entry_write	24	static
+sml_list.c:323:5:sml_list_write	32	static
+sml_list.c:361:6:sml_list_entry_free	16	static
+sml_list.c:377:6:sml_list_free	24	static

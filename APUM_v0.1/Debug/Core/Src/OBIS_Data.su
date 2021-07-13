@@ -1,0 +1,5 @@
+OBIS_Data.c:11:6:OBIS_DataFreeSingle	16	static
+OBIS_Data.c:49:6:OBIS_DataFreeChain	24	static
+OBIS_Data.c:61:18:OBIS_DataFindByPID	24	static
+OBIS_Data.c:69:18:OBIS_DataFindByOBIS	24	static
+OBIS_Data.c:77:18:OBIS_DataFindByMapping	16	static

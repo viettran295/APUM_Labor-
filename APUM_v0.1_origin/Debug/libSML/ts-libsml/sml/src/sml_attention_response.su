@@ -1,0 +1,4 @@
+sml_attention_response.c:14:25:sml_attention_response_init	16	static
+sml_attention_response.c:27:25:sml_attention_response_parse	24	static
+sml_attention_response.c:79:5:sml_attention_response_write	24	static
+sml_attention_response.c:106:6:sml_attention_response_free	16	static

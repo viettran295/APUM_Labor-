@@ -1,0 +1,6 @@
+sml_number.c:14:7:sml_number_init	32	static
+sml_number.c:41:7:sml_number_parse	56	static
+sml_number.c:113:5:sml_number_write	48	static
+sml_number.c:185:6:sml_number_free	16	static
+sml_number.c:193:6:sml_number_byte_swap	24	static
+sml_number.c:214:5:sml_number_endian	16	static

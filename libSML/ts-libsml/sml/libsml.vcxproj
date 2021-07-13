@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E81D34E-8C7B-48F3-BF51-079B2061B3B2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libsml</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_NO_UUID_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_NO_UUID_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\sml\sml_attention_response.h" />
+    <ClInclude Include="include\sml\sml_boolean.h" />
+    <ClInclude Include="include\sml\sml_close_request.h" />
+    <ClInclude Include="include\sml\sml_close_response.h" />
+    <ClInclude Include="include\sml\sml_crc16.h" />
+    <ClInclude Include="include\sml\sml_file.h" />
+    <ClInclude Include="include\sml\sml_get_list_request.h" />
+    <ClInclude Include="include\sml\sml_get_list_response.h" />
+    <ClInclude Include="include\sml\sml_get_proc_parameter_request.h" />
+    <ClInclude Include="include\sml\sml_get_proc_parameter_response.h" />
+    <ClInclude Include="include\sml\sml_get_profile_list_request.h" />
+    <ClInclude Include="include\sml\sml_get_profile_list_response.h" />
+    <ClInclude Include="include\sml\sml_get_profile_pack_request.h" />
+    <ClInclude Include="include\sml\sml_get_profile_pack_response.h" />
+    <ClInclude Include="include\sml\sml_list.h" />
+    <ClInclude Include="include\sml\sml_log.h" />
+    <ClInclude Include="include\sml\sml_message.h" />
+    <ClInclude Include="include\sml\sml_number.h" />
+    <ClInclude Include="include\sml\sml_octet_string.h" />
+    <ClInclude Include="include\sml\sml_open_request.h" />
+    <ClInclude Include="include\sml\sml_open_response.h" />
+    <ClInclude Include="include\sml\sml_set_proc_parameter_request.h" />
+    <ClInclude Include="include\sml\sml_shared.h" />
+    <ClInclude Include="include\sml\sml_signature.h" />
+    <ClInclude Include="include\sml\sml_status.h" />
+    <ClInclude Include="include\sml\sml_time.h" />
+    <ClInclude Include="include\sml\sml_transport.h" />
+    <ClInclude Include="include\sml\sml_transport_file.h" />
+    <ClInclude Include="include\sml\sml_tree.h" />
+    <ClInclude Include="include\sml\sml_v105.h" />
+    <ClInclude Include="include\sml\sml_value.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\sml_attention_response.cpp" />
+    <ClCompile Include="src\sml_boolean.cpp" />
+    <ClCompile Include="src\sml_close_request.cpp" />
+    <ClCompile Include="src\sml_close_response.cpp" />
+    <ClCompile Include="src\sml_crc16.cpp" />
+    <ClCompile Include="src\sml_file.cpp" />
+    <ClCompile Include="src\sml_get_list_request.cpp" />
+    <ClCompile Include="src\sml_get_list_response.cpp" />
+    <ClCompile Include="src\sml_get_proc_parameter_request.cpp" />
+    <ClCompile Include="src\sml_get_proc_parameter_response.cpp" />
+    <ClCompile Include="src\sml_get_profile_list_request.cpp" />
+    <ClCompile Include="src\sml_get_profile_list_response.cpp" />
+    <ClCompile Include="src\sml_get_profile_pack_request.cpp" />
+    <ClCompile Include="src\sml_get_profile_pack_response.cpp" />
+    <ClCompile Include="src\sml_list.cpp" />
+    <ClCompile Include="src\sml_log.cpp" />
+    <ClCompile Include="src\sml_message.cpp" />
+    <ClCompile Include="src\sml_number.cpp" />
+    <ClCompile Include="src\sml_octet_string.cpp" />
+    <ClCompile Include="src\sml_open_request.cpp" />
+    <ClCompile Include="src\sml_open_response.cpp" />
+    <ClCompile Include="src\sml_set_proc_parameter_request.cpp" />
+    <ClCompile Include="src\sml_shared.cpp" />
+    <ClCompile Include="src\sml_signature.cpp" />
+    <ClCompile Include="src\sml_status.cpp" />
+    <ClCompile Include="src\sml_time.cpp" />
+    <ClCompile Include="src\sml_transport.cpp" />
+    <ClCompile Include="src\sml_transport_file.cpp" />
+    <ClCompile Include="src\sml_tree.cpp" />
+    <ClCompile Include="src\sml_v105.cpp" />
+    <ClCompile Include="src\sml_value.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

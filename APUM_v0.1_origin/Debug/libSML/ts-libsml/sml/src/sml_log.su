@@ -1,0 +1,2 @@
+sml_log.c:13:6:sml_set_trace_cb	16	static
+sml_log.c:19:6:trace	16	static

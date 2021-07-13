@@ -1,0 +1,8 @@
+sml_time.c:15:22:sml_timestamp_local_init	16	static
+sml_time.c:28:22:sml_timestamp_local_parse	24	static
+sml_time.c:82:5:sml_timestamp_local_write	24	static
+sml_time.c:106:6:sml_timestamp_local_free	16	static
+sml_time.c:119:11:sml_time_init	16	static
+sml_time.c:132:11:sml_time_parse	24	static
+sml_time.c:204:5:sml_time_write	24	static
+sml_time.c:239:6:sml_time_free	16	static

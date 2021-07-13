@@ -1,0 +1,5 @@
+sml_value.c:13:12:sml_value_init	16	static
+sml_value.c:26:12:sml_value_parse	32	static
+sml_value.c:96:5:sml_value_write	24	static
+sml_value.c:132:6:sml_value_free	16	static
+sml_value.c:155:8:sml_value_to_double	24	static

@@ -1,0 +1,4 @@
+﻿  VisualGDB: Run "cmd.exe /c "C:\SysGCC\arm-eabi\bin\make.exe" CONFIG=Debug -j8" in directory "C:\Users\DrStrangelove\Desktop\libSML\libSMLVGDB\libSMLVGDB" on local computer
+C:\Users\DrStrangelove\Desktop\libSML\libSMLVGDB\libSMLVGDB\Makefile(147): warning : overriding recipe for target `Debug/libSMLVGDB.a'
+C:\Users\DrStrangelove\Desktop\libSML\libSMLVGDB\libSMLVGDB\Makefile(144): warning : ignoring old recipe for target `Debug/libSMLVGDB.a'
+  make: Nothing to be done for `all'.

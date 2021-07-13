@@ -1,0 +1,9 @@
+sml_message.c:25:14:sml_message_init	16	static
+sml_message.c:40:14:sml_message_parse	32	static
+sml_message.c:113:5:sml_message_write	32	static
+sml_message.c:169:6:sml_message_free	16	static
+sml_message.c:184:19:sml_message_body_init	16	static
+sml_message.c:197:19:sml_message_body_init2	24	static
+sml_message.c:210:19:sml_message_body_parse	24	static
+sml_message.c:308:5:sml_message_body_write	24	static
+sml_message.c:387:6:sml_message_body_free	16	static

@@ -1,0 +1,3 @@
+Debug/startup_stm32l452xx.o: \
+ C:/Users/DrStrangelove/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32L4xxxx/StartupFiles/startup_stm32l452xx.c \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\7.2.0\include\stddef.h

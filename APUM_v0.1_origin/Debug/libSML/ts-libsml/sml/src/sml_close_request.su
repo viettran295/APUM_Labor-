@@ -1,0 +1,4 @@
+sml_close_request.c:13:20:sml_close_request_init	16	static
+sml_close_request.c:26:20:sml_close_request_parse	24	static
+sml_close_request.c:69:5:sml_close_request_write	24	static
+sml_close_request.c:82:6:sml_close_request_free	16	static

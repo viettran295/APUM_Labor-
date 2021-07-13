@@ -1,0 +1,4 @@
+sml_set_proc_parameter_request.c:13:33:sml_set_proc_parameter_request_init	16	static
+sml_set_proc_parameter_request.c:26:33:sml_set_proc_parameter_request_parse	24	static
+sml_set_proc_parameter_request.c:81:5:sml_set_proc_parameter_request_write	24	static
+sml_set_proc_parameter_request.c:111:6:sml_set_proc_parameter_request_free	16	static

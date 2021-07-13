@@ -1,0 +1,4 @@
+sml_close_response.c:13:21:sml_close_response_init	16	static
+sml_close_response.c:26:21:sml_close_response_parse	24	static
+sml_close_response.c:69:5:sml_close_response_write	24	static
+sml_close_response.c:87:6:sml_close_response_free	16	static

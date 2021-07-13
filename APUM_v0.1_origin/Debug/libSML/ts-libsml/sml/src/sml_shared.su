@@ -1,0 +1,17 @@
+sml_shared.c:12:13:sml_buffer_init	24	static
+sml_shared.c:42:13:sml_buffer_init2	32	static
+sml_shared.c:53:13:sml_buffer_resize	24	static
+sml_shared.c:83:6:sml_buffer_free	16	static
+sml_shared.c:96:7:hal_driver_realloc	24	static
+sml_shared.c:114:5:sml_buf_get_next_length	32	static
+sml_shared.c:151:5:sml_buf_set_type_and_length	40	static
+sml_shared.c:218:5:sml_buf_has_errors	16	static
+sml_shared.c:223:4:sml_buf_get_next_type	16	static
+sml_shared.c:228:15:sml_buf_get_current_byte	16	static
+sml_shared.c:233:16:sml_buf_get_current_buf	16	static
+sml_shared.c:238:6:sml_buf_update_bytes_read	16	static
+sml_shared.c:243:5:sml_buf_optional_write	16	static
+sml_shared.c:255:5:sml_buf_optional_is_skipped	16	static
+sml_shared.c:267:6:hexdump	24	static
+sml_shared.c:281:5:sml_debug_output	16	static
+sml_shared.c:286:13:sml_get_errorstring	16	static

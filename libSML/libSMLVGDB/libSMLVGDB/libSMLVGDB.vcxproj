@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88A0A62C-CF02-49FD-966E-7D39C9F7D736}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="VisualGDBPackageDefinitions">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>2018.12R2</BSP_VERSION>
+  </PropertyGroup>
+  <ImportGroup Label="VisualGDBFindComponents">
+    <Import Project="$(LOCALAPPDATA)\VisualGDB\FindComponents.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>.;$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0;$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\arm-eabi\thumb\cortex_m4;$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\backward;$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include;$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include-fixed;$(TOOLCHAIN_ROOT)\arm-eabi\sys-include;$(TOOLCHAIN_ROOT)\arm-eabi\include;..\..\ts-libsml\sml\include;..\..\..\SMLExample\Middleware\FreeRTOS;..\..\..\SMLExample\Middleware\FreeRTOS\Source\include;..\..\..\SMLExample\Middleware\FreeRTOS\Source\portable\GCC\ARM_CM3;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(BSP_ROOT)\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)libSMLVGDB-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>.;c:\sysgcc\arm-eabi\arm-eabi\include\c++\6.2.0;c:\sysgcc\arm-eabi\arm-eabi\include\c++\6.2.0\arm-eabi\thumb\cortex_m4;c:\sysgcc\arm-eabi\arm-eabi\include\c++\6.2.0\backward;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\6.2.0\include;c:\sysgcc\arm-eabi\lib\gcc\arm-eabi\6.2.0\include-fixed;c:\sysgcc\arm-eabi\arm-eabi\sys-include;c:\sysgcc\arm-eabi\arm-eabi\include;../../ts-libsml/sml/include;../../../BAB/BABVGDBF429/BABVGDBF429/Middleware/FreeRTOS;../../../BAB/BABVGDBF429/BABVGDBF429/Middleware/FreeRTOS/Source/include;../../../BAB/BABVGDBF429/BABVGDBF429/Middleware/FreeRTOS/Source/portable/GCC/ARM_CM3;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)libSMLVGDB-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="libSMLVGDB-Debug.vgdbsettings" />
+    <None Include="libSMLVGDB-Release.vgdbsettings" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="stm32.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="stm32.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_attention_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_boolean.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_close_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_close_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_crc16.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_file.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_list_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_list_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_proc_parameter_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_proc_parameter_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_profile_list_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_profile_list_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_profile_pack_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_get_profile_pack_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_list.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_log.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_message.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_number.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_octet_string.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_open_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_open_response.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_set_proc_parameter_request.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_shared.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_signature.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_status.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_time.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_transport.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_tree.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_v105.c" />
+    <ClCompile Include="..\..\ts-libsml\sml\src\sml_value.c" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_attention_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_boolean.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_close_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_close_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_crc16.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_file.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_list_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_list_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_proc_parameter_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_proc_parameter_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_profile_list_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_profile_list_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_profile_pack_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_get_profile_pack_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_list.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_log.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_message.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_number.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_octet_string.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_open_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_open_response.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_set_proc_parameter_request.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_shared.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_signature.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_status.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_time.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_transport.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_tree.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_v105.h" />
+    <ClInclude Include="..\..\ts-libsml\sml\include\sml\sml_value.h" />
+    <ClCompile Include="$(BSP_ROOT)\STM32L4xxxx\StartupFiles\startup_stm32l452xx.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,4 @@
+sml_open_request.c:14:19:sml_open_request_init	16	static
+sml_open_request.c:27:19:sml_open_request_parse	24	static
+sml_open_request.c:88:5:sml_open_request_write	24	static
+sml_open_request.c:124:6:sml_open_request_free	16	static

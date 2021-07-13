@@ -1,0 +1,5 @@
+sml_transport.c:27:8:sml_transport_read	32	static
+sml_transport.c:32:8:sml_transport_read2	48	static
+sml_transport.c:121:5:sml_transport_write	16	static
+sml_transport.c:126:5:sml_transport_write2	56	static
+sml_transport.c:217:5:sml_transport_write3	48	static

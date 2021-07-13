@@ -1,0 +1,11 @@
+sml_file.c:16:11:sml_file_init	16	static
+sml_file.c:21:11:sml_file_init2	24	static
+sml_file.c:45:11:sml_file_parse	40	static
+sml_file.c:108:5:sml_file_write	24	static
+sml_file.c:130:6:sml_file_free	24	static
+sml_file.c:153:5:sml_file_add_message	24	static
+sml_file.c:176:6:sml_file_print	24	static
+sml_file.c:187:16:sml_file_get_buffer	24	static
+sml_file.c:197:5:sml_file_get_buffer_len	24	static
+sml_file.c:207:5:sml_file_add_flags	24	static
+sml_file.c:218:5:sml_file_get_error	24	static
